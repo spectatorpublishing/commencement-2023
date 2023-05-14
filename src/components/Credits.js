@@ -9,13 +9,13 @@ const jsonData = require("../testData/testCredits.json")
 const font = "Khula";
 
 const HeaderDiv = styled.div`
-    padding-left:4rem;
     @media only screen and (max-width: 768px){
         text-align:center;
     }
 `;
 
 const Header = styled.h1`
+    padding-left:4rem;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -26,16 +26,21 @@ const Header = styled.h1`
     padding-top:2rem;
     @media only screen and (max-width: 1216px){
         width: 68%;
+        font-weight: 700;
         font-size: 1.8rem;
+        text-align:center
     }
     @media only screen and (max-width: 768px){
         width: 80%;
+        font-weight: 700;
         font-size: 1.5rem;
+        text-align:center
     }
     @media only screen and (max-width: 600px){
-        font-weight: 400;
+        font-weight: 700;
         font-size: 1.3rem;
         padding-top:5rem;
+        text-align:center;
     }
 `;
 
@@ -48,6 +53,7 @@ const SectAndNames = styled.ul`
 
   @media only screen and (max-width: 768px) {
     columns: 1;
+    
     }
   }
 `;
@@ -72,6 +78,9 @@ const Section = styled.div`
         font-size: 16px;
         line-height: 26px;
         text-transform: uppercase;
+        @media only screen and (max-width: 768px){
+            padding-left: 0rem;
+        }
     }
     @media only screen and (max-width: 1216px){
         font-size: 1.8rem;
@@ -101,14 +110,10 @@ const Name = styled.div`
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #FFFFFF;
-    @media only screen and (max-width: 1216px){
-        font-size: 1rem;
-    }
-    @media only screen and (max-width: 1024px){
-        font-size: 0.8rem;
-    }
+
     @media only screen and (max-width: 768px){
         font-size:1rem;
+        padding-left: 0rem;
     }
 `;
 
