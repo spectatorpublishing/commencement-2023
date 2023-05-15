@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import styled from "styled-components";
 import MobileNavBar from "../components/MobileNavBar";
 import Playbar from "../components/Playbar";
+import PlaylistTop from "../components/PlaylistTop";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -20,6 +21,12 @@ const Home = () => {
       <Playbar />
       <Letter />
       <Credits />
+      <PlaylistTop
+        name="COMMENCEMENT 2023"
+        description="Congrats!"
+        creator="specteam"
+        numberOfSongs={34}
+      />
     </HomeContainer>
   );
 };
