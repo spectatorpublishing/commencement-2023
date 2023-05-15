@@ -102,7 +102,7 @@ const Spotify = styled.img`
 const IconRow = styled.div`
   display: flex;
   gap: 1.75rem;
-  padding: 1rem 0rem;
+  padding: 1rem 0rem 1rem 1rem;
   align-items: center;
 `;
 
