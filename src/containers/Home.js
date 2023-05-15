@@ -4,6 +4,7 @@ import Letter from "../components/LetterFromEditor";
 import NavBar from "../components/NavBar";
 import styled from "styled-components";
 import MobileNavBar from "../components/MobileNavBar";
+import Playbar from "../components/Playbar";
 import PlaylistTop from "../components/PlaylistTop";
 
 const HomeContainer = styled.div`
@@ -17,6 +18,7 @@ const Home = () => {
     <HomeContainer>
       <NavBar />
       <MobileNavBar />
+      <Playbar />
       <Letter />
       <Credits />
       <PlaylistTop
