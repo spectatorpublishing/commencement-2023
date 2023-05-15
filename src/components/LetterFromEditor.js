@@ -45,7 +45,6 @@ const Title = styled.div`
     @media only screen and (max-width: 768px) {
         font-size: 1.88rem;
     }
-  
 
     @media only screen and (max-width: 400px) {
         padding: 0;
@@ -63,13 +62,12 @@ const Text = styled.div`
     font-weight: 25rem;
     font-size: 1.29rem;
     line-height: 2rem;
+    padding-right: 3rem;
     
     @media only screen and (max-width: 768px){
-        font-size: 1rem;
         padding-right: 2rem;
     }
     @media only screen and (max-width: 400px) {
-        font-size: 0.9rem;
         display: inline-block;
         padding-right: 2rem;
     }
