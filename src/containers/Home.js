@@ -4,6 +4,7 @@ import Letter from '../components/LetterFromEditor';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
+import SongArticle from '../components/SongArticle';
 
 const HomeContainer = styled.div`
     width: 100%;
@@ -15,6 +16,7 @@ const Home = () => {
 
     return (
         <HomeContainer>
+            <SongArticle/>
             <NavBar />
             <MobileNavBar />
             <Letter />
