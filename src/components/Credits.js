@@ -4,43 +4,34 @@
 import React from 'react';
 import styled from 'styled-components';
 import { credits } from '../testData/testCredits.js'
+import { size } from "../device";
+
 const jsonData = require("../testData/testCredits.json")
 
 const font = "Khula";
 
-const HeaderDiv = styled.div`
-    @media only screen and (max-width: 768px){
-        text-align:center;
-    }
-`;
-
-const Header = styled.h1`
+const Header = styled.div`
     padding-left:4rem;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 48px;
+    font-size: 1.8rem;
+    line-height: 1rem;
     text-transform: capitalize;
     color: #FFFFFF;
     font-family: ${font};
     padding-top:2rem;
-    @media only screen and (max-width: 1216px){
-        width: 68%;
-        font-weight: 700;
-        font-size: 1.8rem;
-        text-align:center
-    }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: ${size.tablet}){
         width: 80%;
         font-weight: 700;
         font-size: 1.5rem;
         text-align:center
     }
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: ${size.mobile}){
         font-weight: 700;
-        font-size: 1.3rem;
-        padding-top:5rem;
+        font-size: 1.2rem;
+        padding: 5rem 0rem 0rem 0rem;
         text-align:center;
+        margin: auto;
     }
 `;
 
@@ -126,23 +117,23 @@ const Credits = () => {
 
     return (
         <CreditsWrapper>
-        <HeaderDiv><Header>Staff who made this issue possible</Header></HeaderDiv>
+            <Header>Staff who made this issue possible</Header>
             <SectAndNames>
 
                 {/* change credits to jsonData if reading from json intead of js */}
-                    {Object.entries(credits).map(([section, key]) => {
-                        return(
-                            <li>
-                                <Section> <span class = "sectionName">{section}</span>
+                {Object.entries(credits).map(([section, key]) => {
+                    return (
+                        <li>
+                            <Section> <span class="sectionName">{section}</span>
                                 {key.map((person, index) => {
-                                    return(
+                                    return (
                                         <Name key={index}>{person.staff_name}, {person.title}</Name>
                                     );
                                 })}
-                                </Section>
-                            </li>
-                        );
-                    })}
+                            </Section>
+                        </li>
+                    );
+                })}
             </SectAndNames>
         </CreditsWrapper>
     );
