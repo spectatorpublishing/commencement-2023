@@ -1,6 +1,3 @@
-//Note: This version of Credits.js reads from ../testData, edit 5 or 6 (depending on if you're reading from a json or a js file
-//to read from the real file
-
 import React from 'react';
 import styled from 'styled-components';
 import { credits } from '../testData/testCredits.js'
@@ -109,8 +106,6 @@ const Name = styled.div`
 `;
 
 const CreditsWrapper = styled.div`
-    padding-bottom: 145px;
-
 `;
 
 const Credits = () => {
