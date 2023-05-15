@@ -6,6 +6,7 @@ import styled from "styled-components";
 import MobileNavBar from "../components/MobileNavBar";
 import Playbar from "../components/Playbar";
 import PlaylistTop from "../components/PlaylistTop";
+import SongArticle from '../components/SongArticle';
 
 const HomeContainer = styled.div`
   width: 100%;
