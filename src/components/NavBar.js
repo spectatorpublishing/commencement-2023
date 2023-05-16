@@ -84,7 +84,7 @@ const NavBar = () => {
                     </Tab>
                 </NavHashLink>
                 <SectionWrapper>
-                    <IconBox src={sectionsIcon} isHome={false} alt="Save" /><NavText>Sections</NavText>
+                    <IconBox src={sectionsIcon} isHome={false} alt="sections" /><NavText>Sections</NavText>
                 </SectionWrapper>
                 {sections.map((section, index) => (section.title != "Home" &&
                     <NavHashLink smooth to={section.url}>
