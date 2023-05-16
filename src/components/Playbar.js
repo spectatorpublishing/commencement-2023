@@ -16,7 +16,7 @@ import speaker from "../assets/speaker.svg";
 import volumeBar from "../assets/volume-bar.svg";
 import volumeSpeaker from "../assets/volume-speaker.svg";
 
-import IMAGEPLACEHOLDER from "../assets/IMAGEPLACEHOLDER.svg";
+import playbar_album from "../assets/playbar_album.jpg";
 
 const font = "Khula";
 
@@ -160,7 +160,7 @@ const VolumeBar = styled.img`
 const Playbar = () => {
   return (
     <PlayBarWrapper>
-      <AlbumCover src={IMAGEPLACEHOLDER} alt="Album Cover" />
+      <AlbumCover src={playbar_album} alt="Album Cover" />
 
       <PlayBarContent>
         <SongInfo>

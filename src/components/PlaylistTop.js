@@ -9,7 +9,7 @@ import onedotSVG from "../assets/onedot.svg";
 import playButtonSVG from "../assets/playbutton.svg";
 import spotifySVG from "../assets/spotify.svg";
 import threeDotsSVG from "../assets/threedots.svg";
-import IMAGEPLACEHOLDER from "../assets/IMAGEPLACEHOLDER.svg";
+import playlist_album from "../assets/playlist_album.jpg";
 
 const font = "Khula";
 
@@ -135,7 +135,7 @@ const PlaylistTop = ({ name, description, creator, numberOfSongs }) => {
   return (
     <PlaylistTopWrapper>
       <TopRow>
-        <CoverArt src={IMAGEPLACEHOLDER}></CoverArt>
+        <CoverArt src={playlist_album}></CoverArt>
         <ArticleInfoBox>
           <div display="flex">
             <Title>{name}</Title>

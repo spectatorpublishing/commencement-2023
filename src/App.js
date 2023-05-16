@@ -11,7 +11,7 @@ import {
   ac_articles,
   city_news_articles,
   spectrum_articles
-} from './testData/testArticles';
+} from './data/article_data';
 
 const App = () => {
   return (

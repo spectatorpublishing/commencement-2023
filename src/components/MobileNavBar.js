@@ -29,7 +29,6 @@ const NavWrap = styled.div`
 
 const BottomNav = styled.div`
     display: flex;
-    // align-items: space-around;
     justify-content:  space-around;
 
     background: #000000;
@@ -47,7 +46,7 @@ const IconAndName = styled.div`
     align-items: center;
     justify-content: center;
     text-align: right;
-    padding: 0.75rem 0rem 0.25rem 0.5rem;
+    padding: 0.5rem;
 `;
 
 
@@ -56,11 +55,8 @@ const VertNav = styled.div`
     top:0;
     left:0;
     background: black;
-    // bottom:0;
-    // right:0;
-    height:88%;
+    height: calc(100% - 6rem);
     width:100%;
-    // transform: translate(0%, 0%);
     padding:1rem 0rem;
     margin-right: 0.1rem;
     padding-right: 1.2rem;
@@ -131,18 +127,18 @@ const MobileNavBar = () => {
             {(show) ?
                 <VertNav>
                     <NavHashLink smooth to={"/"}>
-                        <Tab currentSection={window.location.pathname == "/"} key={0}>
-                            {window.location.pathname != "/" ? <IconBox src={homeIcon} alt="home" /> : <IconBox src={homeIconBlue} alt="home blue" />}
+                        <Tab currentSection={window.location.pathname === "/"} key={0}>
+                            {window.location.pathname !== "/" ? <IconBox src={homeIcon} alt="home" /> : <IconBox src={homeIconBlue} alt="home blue" />}
                             <NavText>Home</NavText>
                         </Tab>
                     </NavHashLink>
                     <SectionWrapper>
                         <IconBox src={sectionsIcon} alt="sections" /><NavText>Sections</NavText>
                     </SectionWrapper>
-                    {sections.map((section, index) => (section.title != "Home" &&
+                    {sections.map((section, index) => (section.title !== "Home" &&
                         <NavHashLink smooth to={section.url}>
-                            <Tab currentSection={window.location.pathname == section.url} key={index}>
-                                {window.location.pathname != section.url ? <IconBox src={chevronDown} alt="playlist" /> : <IconBox src={chevronDownBlue} alt="playlist blue" />}
+                            <Tab currentSection={window.location.pathname === section.url} key={index}>
+                                {window.location.pathname !== section.url ? <IconBox src={chevronDown} alt="playlist" /> : <IconBox src={chevronDownBlue} alt="playlist blue" />}
                                 <NavText>{section.title}</NavText>
                             </Tab>
                         </NavHashLink>
