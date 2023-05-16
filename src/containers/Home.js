@@ -7,40 +7,45 @@ import MobileNavBar from "../components/MobileNavBar";
 import Playbar from "../components/Playbar";
 import PlaylistTop from "../components/PlaylistTop";
 
+import { size } from "../device";
+
 const HomeContainer = styled.div`
   // width: 100%;
   // height: 100%;
   display: flex;
   align-items: center;
-  // justify-content: center;
+  justify-content: flex-start;
   background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
-  flexDirection: 'row',
+  // flexDirection: 'row',
 `;
 
 const LeftContainer = styled.div`
-  display: flex;
-  // width: 15%;
-  width: 15rem;
-  order: 1;
-  background: #000000;
+  display: none;
+  @media (min-width: ${size.mobile}) {
+    display: flex;
+    // width: 15%;
+    width: 15rem;
+    // order: 1;
+    background: #000000;
+  }
 `;
 
 const RightContainer = styled.div`
   display: flex;
-  order: 2;
-  flexDirection: 'column',
+  flex-direction: column;
   justify-content:center;
+  align-items: center;
   // width: 100%;
   // height: 100%;
   // background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
 `;
+
 
 const Home = () => {
   return (
     <HomeContainer>
       <LeftContainer>
         <NavBar />
-        <MobileNavBar />
         {/* <p>test</p> */}
       </LeftContainer>
       <RightContainer>
@@ -50,9 +55,9 @@ const Home = () => {
           creator="specteam"
           numberOfSongs={34}
         />
-        <p>test</p>
-        {/* <Letter />
-        <Credits /> */}
+        <Letter />
+        <Credits />
+        <MobileNavBar />
       </RightContainer>
       {/* <Playbar /> */}
     </HomeContainer>

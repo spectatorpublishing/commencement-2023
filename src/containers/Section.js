@@ -25,32 +25,33 @@ const LeftContainer = styled.div`
 
 const RightContainer = styled.div`
   display: flex;
-  order: 2;
-  flexDirection: 'column',
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
   // width: 100%;
   // height: 100%;
   // background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
 `;
 
 const Home = () => {
-    return (
-        <HomeContainer>
-            <LeftContainer>
-                <NavBar />
-                <MobileNavBar />
-                {/* <p>test</p> */}
-            </LeftContainer>
-            <RightContainer>
-                <PlaylistTop
-                    name="COMMENCEMENT 2023"
-                    description="Congrats!"
-                    creator="specteam"
-                    numberOfSongs={34}
-                />
-            </RightContainer>
-            {/* <Playbar /> */}
-        </HomeContainer>
-    );
+  return (
+    <HomeContainer>
+      <LeftContainer>
+        <NavBar />
+        {/* <p>test</p> */}
+      </LeftContainer>
+      <RightContainer>
+        <PlaylistTop
+          name="COMMENCEMENT 2023"
+          description="Congrats!"
+          creator="specteam"
+          numberOfSongs={34}
+        />
+        <MobileNavBar />
+      </RightContainer>
+      {/* <Playbar /> */}
+    </HomeContainer>
+  );
 };
 
 export default Home;
