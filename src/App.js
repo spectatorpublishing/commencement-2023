@@ -19,7 +19,6 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/uni-news" element={<Section id="uni-news" header="UNIVERSITY NEWS" articles={university_news_articles} />} />
-        <Route path="/city-news" element={<Section id="city-news" header="CITY NEWS" articles={city_news_articles} />} />
         <Route path="/opinion" element={<Section id="opinion" header="OPINION" articles={opinion_articles} />} />
         <Route path="/a&c" element={<Section id="a&c" header="Arts and Culture" articles={ac_articles} />} />
         <Route path="/sports" element={<Section id="sports" header="SPORTS" articles={sports_articles} />} />
