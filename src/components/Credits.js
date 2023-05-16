@@ -55,7 +55,7 @@ const Section = styled.div`
     width: 28rem;
     height: fit-content;
     margin-bottom: 2rem;
-    padding:0;
+    padding:1rem;
     margin:0;
     color: white;
     font-family: ${font};
@@ -119,7 +119,6 @@ const Credits = () => {
         <CreditsWrapper>
             <Header>Staff who made this issue possible</Header>
             <SectAndNames>
-
                 {/* change credits to jsonData if reading from json intead of js */}
                 {Object.entries(credits).map(([section, key]) => {
                     return (

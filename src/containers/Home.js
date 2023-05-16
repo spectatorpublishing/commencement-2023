@@ -14,6 +14,9 @@ const Top = styled.div`
 const Left = styled.div`
   width: 15rem;
   background: black;
+  height:100vh;
+  position:sticky;
+  top:0;
 `;
 
 const Right = styled.div`
