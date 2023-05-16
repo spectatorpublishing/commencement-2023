@@ -137,7 +137,7 @@ const MobileNavBar = () => {
                     </SectionWrapper>
                     {sections.map((section, index) => (section.title !== "Home" &&
                         <NavHashLink smooth to={section.url}>
-                            <Tab currentSection={window.location.pathname === section.url} key={index}>
+                            <Tab currentSection={window.location.pathname === section.url} key={index} onClick={() => setToggle(!show)}>
                                 {window.location.pathname !== section.url ? <IconBox src={chevronDown} alt="playlist" /> : <IconBox src={chevronDownBlue} alt="playlist blue" />}
                                 <NavText>{section.title}</NavText>
                             </Tab>

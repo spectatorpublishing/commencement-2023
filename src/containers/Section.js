@@ -6,52 +6,89 @@ import Playbar from "../components/Playbar";
 import PlaylistTop from "../components/PlaylistTop";
 import SongArticle from '../components/SongArticle';
 
-const HomeContainer = styled.div`
-  // width: 100%;
-  // height: 100%;
+import { size } from "../device";
+
+const Top = styled.div`
   display: flex;
-  align-items: center;
-  // justify-content: center;
-  background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
-  flexDirection: 'row',
+  background: linear-gradient(180deg, #2c4974 0%, #141314 15%), #3f132e;
+
+  @media (min-width: ${size.mobile}) {
+    width: 100%;
+  }
 `;
 
-const LeftContainer = styled.div`
+const Bottom = styled.div`
   display: flex;
-  width: 15%;
-  order: 1;
-  background: #000000;
+  @media (min-width: ${size.mobile}) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 `;
 
-const RightContainer = styled.div`
+const Left = styled.div`
+  display: none;
+  @media (min-width: ${size.mobile}) {
+    display: flex;
+    width: 15rem;
+    background: black;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+`;
+
+const Right = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  // width: 100%;
-  // height: 100%;
-  // background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
+  @media (min-width: ${size.mobile}) {
+    width: 100%;
+  }
 `;
 
-const Home = () => {
+const DividerLine = styled.hr`
+  background-color: white;
+  width: 93%;
+  heigth: 1px;
+
+  @media (max-width: ${size.mobile}) {
+    display: none;
+  }
+`;
+
+const ArticlesContainer = styled.div`
+
+`;
+
+const Section = ({ header, articles }) => {
   return (
-    <HomeContainer>
-      <LeftContainer>
-        <NavBar />
-        {/* <p>test</p> */}
-      </LeftContainer>
-      <RightContainer>
-        <PlaylistTop
-          name="COMMENCEMENT 2023"
-          description="Congrats!"
-          creator="specteam"
-          numberOfSongs={34}
-        />
+    <div>
+      <Top>
+        <Left>
+          <NavBar />
+        </Left>
+        <Right>
+          <PlaylistTop
+            name={header}
+            description="Congrats class of 2023!!! 🥳!"
+            creator="specteam"
+            numberOfSongs={Object.keys(articles).length}
+          />
+          <DividerLine />
+          {/* <SongArticle /> */}
+          <ArticlesContainer>
+            {articles.map((article, index) => (
+              <a style={{ textDecoration: 'none' }} href={article.article_link}><SongArticle img={article.image_url} title={article.article_title} author={article.article_authors} /></a>
+            ))}
+          </ArticlesContainer>
+        </Right>
+      </Top>
+      <Bottom>
+        <Playbar />
         <MobileNavBar />
-      </RightContainer>
-      <Playbar />
-    </HomeContainer>
+      </Bottom>
+    </div>
   );
 };
 
-export default Home;
+export default Section;
