@@ -9,7 +9,7 @@ import PlaylistTop from "../components/PlaylistTop";
 
 const Top = styled.div`
   display:flex;
-  background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
+  background: linear-gradient(180deg, #2c4974 0%, #141314 15%), #3f132e;
 `;
 const Left = styled.div`
   width: 15rem;
