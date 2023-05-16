@@ -16,6 +16,7 @@ const font = "Khula";
 const PlaylistTopWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 2rem 2rem;
 
   @media (max-width: ${size.mobile}) {
     padding: 3rem 1.2rem;
@@ -70,7 +71,7 @@ const Title = styled.p`
     white-space: normal;
     line-height: 30px;
     font-size: 27px;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 0;
   }
 `;
@@ -102,7 +103,7 @@ const Spotify = styled.img`
 const IconRow = styled.div`
   display: flex;
   gap: 1.75rem;
-  padding: 1rem 0rem 1rem 1rem;
+  padding: 1rem 0rem;
   align-items: center;
 `;
 
