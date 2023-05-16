@@ -21,15 +21,14 @@ import IMAGEPLACEHOLDER from "../assets/IMAGEPLACEHOLDER.svg";
 const font = "Khula";
 
 const PlayBarWrapper = styled.div`
-  position:fixed;
-  bottom:0;
+  position: fixed;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
 
   @media (max-width: ${size.mobile}) {
-    display: flex;
-    height: 100%;
+    height: 60px;
     flex-direction: row;
   }
 `;

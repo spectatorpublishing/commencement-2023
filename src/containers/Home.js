@@ -10,12 +10,16 @@ import PlaylistTop from "../components/PlaylistTop";
 import { size } from "../device";
 
 const Top = styled.div`
-  display:flex;
+  display: flex;
   background: linear-gradient(180deg, #2c4974 0%, #141314 15%), #3f132e;
+
+  @media (min-width: ${size.mobile}) {
+    width: 100%;
+  }
 `;
 
 const Bottom = styled.div`
-  display:flex;
+  display: flex;
   @media (min-width: ${size.mobile}) {
     position: fixed;
     bottom: 0;
@@ -26,15 +30,13 @@ const Bottom = styled.div`
 const Left = styled.div`
   display: none;
   @media (min-width: ${size.mobile}) {
-    display:flex;
+    display: flex;
     width: 15rem;
     background: black;
-    height:100vh;
-    position:sticky;
-    top:0;
-  
+    height: 100vh;
+    position: sticky;
+    top: 0;
   }
-
 `;
 
 const Right = styled.div`
