@@ -13,22 +13,26 @@ import sectionsIcon from "../assets/sections.svg";
 
 const font = "Khula";
 
+// const NavWrap = styled.div`
+//     // // display: none;
+
+
+//     // @media (min-width: ${size.mobile}) {
+//     //     display: none;
+//     // }
+// `;
+
 const NavWrap = styled.div`
-    // // display: none;
-    
-
-    // @media (min-width: ${size.mobile}) {
-    //     display: none;
-    // }
-`;
-
-const BottomNavWrap = styled.div`
     a {
         text-decoration: none;
     }
     position: fixed;
     bottom: 0;
     width: 100%;
+
+    @media only screen and (min-width: ${size.tablet}){
+        display: none;
+    }
 `;
 
 const BottomNav = styled.div`
@@ -38,11 +42,6 @@ const BottomNav = styled.div`
 
     background: #000000;
 `;
-
-// const IconBox = styled.img`
-//     width: 25px;
-//     height: 25px;
-// `;
 
 const BottomText = styled.div`
     font-style: normal;
@@ -123,21 +122,20 @@ const MobileNavBar = () => {
     const [show, setToggle] = useState(false);
     console.log(show)
     return (
-        <>
-            <BottomNavWrap>
-                <BottomNav>
-                    <NavHashLink smooth to={"/"}>
-                        <IconAndName>
-                            <IconBox src={homeIcon} alt="home" />
-                            <BottomText>Home</BottomText>
-                        </IconAndName>
-                    </NavHashLink>
-                    <IconAndName onClick={() => setToggle(!show)} >
-                        <IconBox src={sectionsIcon} alt="section" />
-                        <BottomText>Sections</BottomText>
+        <NavWrap>
+            <BottomNav>
+                <NavHashLink smooth to={"/"}>
+                    <IconAndName>
+                        <IconBox src={homeIcon} alt="home" />
+                        <BottomText>Home</BottomText>
                     </IconAndName>
-                </BottomNav>
-            </BottomNavWrap >
+                </NavHashLink>
+                <IconAndName onClick={() => setToggle(!show)} >
+                    <IconBox src={sectionsIcon} alt="section" />
+                    <BottomText>Sections</BottomText>
+                </IconAndName>
+            </BottomNav>
+            {/* </BottomNavWrap > */}
             {(show) ?
                 <VertNav>
                     <NavHashLink smooth to={"/"}>
@@ -158,8 +156,8 @@ const MobileNavBar = () => {
                         </NavHashLink>
                     ))}
                 </VertNav> : null}
+        </NavWrap >
 
-        </>
     );
 };
 
