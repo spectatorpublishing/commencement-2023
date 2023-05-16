@@ -7,55 +7,41 @@ import MobileNavBar from "../components/MobileNavBar";
 import Playbar from "../components/Playbar";
 import PlaylistTop from "../components/PlaylistTop";
 
-const HomeContainer = styled.div`
-  // width: 100%;
-  // height: 100%;
-  display: flex;
-  align-items: center;
-  // justify-content: center;
+const Top = styled.div`
+  display:flex;
   background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
-  flexDirection: 'row',
 `;
-
-const LeftContainer = styled.div`
-  display: flex;
-  // width: 15%;
+const Left = styled.div`
   width: 15rem;
-  order: 1;
-  background: #000000;
+  background: black;
 `;
 
-const RightContainer = styled.div`
+const Right = styled.div`
   display: flex;
-  order: 2;
-  flexDirection: 'column',
-  justify-content:center;
-  // width: 100%;
-  // height: 100%;
-  // background: linear-gradient(180deg, #2c4974 0%, #141314 100%), #3f132e;
+  flex-direction: column;
 `;
 
 const Home = () => {
   return (
-    <HomeContainer>
-      <LeftContainer>
+    <div>
+    <Top>
+      <Left>
         <NavBar />
         <MobileNavBar />
-        {/* <p>test</p> */}
-      </LeftContainer>
-      <RightContainer>
+      </Left>
+      <Right>
         <PlaylistTop
           name="COMMENCEMENT 2023"
           description="Congrats!"
           creator="specteam"
           numberOfSongs={34}
         />
-        <p>test</p>
-        {/* <Letter />
-        <Credits /> */}
-      </RightContainer>
-      {/* <Playbar /> */}
-    </HomeContainer>
+        <Letter/>
+        <Credits/>
+      </Right>
+    </Top>
+    <Playbar />
+    </div>
   );
 };
 
