@@ -29,9 +29,7 @@ const NavWrap = styled.div`
 
 const BottomNav = styled.div`
   display: flex;
-  // align-items: space-around;
   justify-content: space-around;
-
   background: #000000;
 `;
 
@@ -47,7 +45,7 @@ const IconAndName = styled.div`
   align-items: center;
   justify-content: center;
   text-align: right;
-  padding: 0.75rem 0rem 0.25rem 0.5rem;
+  padding: 0.5rem;
 `;
 
 const VertNav = styled.div`
@@ -55,11 +53,8 @@ const VertNav = styled.div`
   top: 0;
   left: 0;
   background: black;
-  // bottom:0;
-  // right:0;
-  height: 88%;
+  height: calc(100% - 6rem);
   width: 100%;
-  // transform: translate(0%, 0%);
   padding: 1rem 0rem;
   margin-right: 0.1rem;
   padding-right: 1.2rem;

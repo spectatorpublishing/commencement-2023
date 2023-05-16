@@ -9,9 +9,8 @@ import {
   opinion_articles,
   sports_articles,
   ac_articles,
-  city_news_articles,
-  spectrum_articles,
-} from "./data/article_data";
+  spectrum_articles
+} from './data/article_data';
 
 const App = () => {
   return (
