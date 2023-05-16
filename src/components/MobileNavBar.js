@@ -13,15 +13,6 @@ import sectionsIcon from "../assets/sections.svg";
 
 const font = "Khula";
 
-// const NavWrap = styled.div`
-//     // // display: none;
-
-
-//     // @media (min-width: ${size.mobile}) {
-//     //     display: none;
-//     // }
-// `;
-
 const NavWrap = styled.div`
     a {
         text-decoration: none;
@@ -29,8 +20,9 @@ const NavWrap = styled.div`
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 4rem;
 
-    @media only screen and (min-width: ${size.tablet}){
+    @media only screen and (min-width: ${size.mobile}){
         display: none;
     }
 `;
@@ -120,7 +112,7 @@ const IconBox = styled.img`
 
 const MobileNavBar = () => {
     const [show, setToggle] = useState(false);
-    console.log(show)
+
     return (
         <NavWrap>
             <BottomNav>

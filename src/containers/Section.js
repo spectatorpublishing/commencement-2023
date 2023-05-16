@@ -49,7 +49,7 @@ const Home = () => {
         />
         <MobileNavBar />
       </RightContainer>
-      {/* <Playbar /> */}
+      <Playbar />
     </HomeContainer>
   );
 };
