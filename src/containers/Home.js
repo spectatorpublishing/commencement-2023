@@ -47,6 +47,16 @@ const Right = styled.div`
   }
 `;
 
+const DividerLine = styled.hr`
+  background-color: white;
+  width: 93%;
+  heigth: 1px;
+
+  @media (max-width: ${size.mobile}) {
+    display: none;
+  }
+`;
+
 const Home = () => {
   return (
     <div>
@@ -61,6 +71,7 @@ const Home = () => {
             creator="specteam"
             numberOfSongs={34}
           />
+          <DividerLine />
           <Letter />
           <Credits />
         </Right>

@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const LetterWrapper = styled.div`
-  padding: 4rem;
-  padding-bottom: 6rem;
+  padding: 2rem 3rem 6rem 3rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 3rem 3rem 2rem 3rem;
+    padding: 0rem 3rem 2rem 3rem;
   }
 `;
 

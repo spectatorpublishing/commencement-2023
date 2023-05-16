@@ -109,7 +109,7 @@ const Name = styled.div`
 const CreditsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0rem 4rem 8rem 4rem;
+  padding: 0rem 3rem 8rem 3rem;
 
   @media only screen and (max-width: ${size.mobile}) {
     padding: 2rem 2rem 9rem 2rem;

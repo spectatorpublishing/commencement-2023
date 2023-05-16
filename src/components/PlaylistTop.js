@@ -16,10 +16,10 @@ const font = "Khula";
 const PlaylistTopWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem 0rem 2rem;
 
   @media (max-width: ${size.mobile}) {
-    padding: 3rem 1.2rem;
+    padding: 3rem 1.2rem 0rem 1.2rem;
   }
 `;
 
