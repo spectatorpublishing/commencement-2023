@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1016f894.css",
+    "main.js": "/static/js/main.3a1d9e1c.js",
+    "static/media/playlist_album.jpg": "/static/media/playlist_album.1da9dc6e65e615661d26.jpg",
+    "static/media/playbar_album.jpg": "/static/media/playbar_album.6eae9ad06947b375977b.jpg",
+    "index.html": "/index.html",
+    "static/media/spotify.svg": "/static/media/spotify.90dd37c1dc1bb84a644f51bca5d7834a.svg",
+    "static/media/volume-speaker.svg": "/static/media/volume-speaker.5c9d41d5ee48e8c40ffa81b8412f0bbc.svg",
+    "static/media/speaker.svg": "/static/media/speaker.a4b25cd6dbb817dcc810f9bb88852806.svg",
+    "static/media/chevron-down.svg": "/static/media/chevron-down.ecc4cb108878e9c358326b240eb31964.svg",
+    "static/media/chevron-down-blue.svg": "/static/media/chevron-down-blue.c6083fba44424fd6a0ed2c56aca3987c.svg",
+    "static/media/shuffle.svg": "/static/media/shuffle.a31446c4e594546d8c3e0d1529f8ef1e.svg",
+    "static/media/heart.svg": "/static/media/heart.ba56db2ce6a27b30abd7c4ec4b201852.svg",
+    "static/media/musiclist.svg": "/static/media/musiclist.23a12b1efe2e0f7a53bf5b225937f6d9.svg",
+    "static/media/download.svg": "/static/media/download.a6b63c631a23c28ebff0cccc2029d4aa.svg",
+    "static/media/entertainment.svg": "/static/media/entertainment.ae2a7039e6d5e7440060afd5b5d99319.svg",
+    "static/media/threedots.svg": "/static/media/threedots.22e38ba4cf78bcc4a830ea4945d79d0d.svg",
+    "static/media/loop.svg": "/static/media/loop.0e9775290fc5f0d4d540dcb73856a85b.svg",
+    "static/media/home-blue.svg": "/static/media/home-blue.6b7e689ad2e120ada51c2138df8c31e8.svg",
+    "static/media/home.svg": "/static/media/home.b0231fd0d74445dcd5f0c6c201727161.svg",
+    "static/media/sections.svg": "/static/media/sections.0e81934f3993b4c673da75f0f2867468.svg",
+    "static/media/previous-song.svg": "/static/media/previous-song.030edaa932fa21dff2a92b58ba391103.svg",
+    "static/media/next-song.svg": "/static/media/next-song.158f75705e6cec1fb177ea15afe8497d.svg",
+    "static/media/playbar-playbutton.svg": "/static/media/playbar-playbutton.bdc86dacdcf472747ba80e9d0fe9b0be.svg",
+    "static/media/playbutton.svg": "/static/media/playbutton.94aaffbfd4d8af3b9f431a792a2336ff.svg",
+    "static/media/progressbar.svg": "/static/media/progressbar.5e4f3d40f0a9007a5564e45d8e04a8e5.svg",
+    "static/media/mobile-play.svg": "/static/media/mobile-play.a6640d454c8cf6f050b94be7c1e1ffff.svg",
+    "static/media/volume-bar.svg": "/static/media/volume-bar.8968b3e23aeb30feba3dd7860158a69a.svg",
+    "static/media/onedot.svg": "/static/media/onedot.720008215d274b5dd008a1c8ea76c505.svg",
+    "main.1016f894.css.map": "/static/css/main.1016f894.css.map",
+    "main.3a1d9e1c.js.map": "/static/js/main.3a1d9e1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1016f894.css",
+    "static/js/main.3a1d9e1c.js"
+  ]
+}
