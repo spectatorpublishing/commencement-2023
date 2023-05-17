@@ -10,9 +10,12 @@ import homeIcon from "../assets/home.svg";
 import homeIconBlue from "../assets/home-blue.svg";
 import sectionsIcon from "../assets/sections.svg";
 
+const font = "Khula";
+
 const NavWrapper = styled.div`
   a {
     text-decoration: none;
+    font-family: ${font};
   }
   @media only screen and (max-width: ${size.mobile}) {
     display: none;
@@ -60,6 +63,7 @@ const NavText = styled.div`
   margin-right: 1.5rem;
   text-align: left;
   padding-left: 0.5rem;
+  padding-top: 0.1rem;
 `;
 
 const IconBox = styled.img`
@@ -73,53 +77,53 @@ const IconBox = styled.img`
 `;
 
 const NavBar = () => {
-  return (
-    <NavWrapper>
-      <VertNav>
-        <NavHashLink smooth to={"/"} onClick={window.scrollTo(0,0)}>
-          <Tab
-            currentSection={window.location.pathname === "/"}
-            isHome={true}
-            key={0}
-          >
-            {window.location.pathname !== "/" ? (
-              <IconBox src={homeIcon} isHome={true} alt="home" />
-            ) : (
-              <IconBox src={homeIconBlue} isHome={true} alt="home blue" />
-            )}
-            <NavText>Home</NavText>
-          </Tab>
-        </NavHashLink>
-        <SectionWrapper>
-          <IconBox src={sectionsIcon} isHome={false} alt="sections" />
-          <NavText>Sections</NavText>
-        </SectionWrapper>
-        {sections.map(
-          (section, index) =>
-            section.title !== "Home" && (
-              <NavHashLink smooth to={section.url}>
-                <Tab
-                  currentSection={window.location.pathname === section.url}
-                  isHome={false}
-                  key={index}
-                >
-                  {window.location.pathname !== section.url ? (
-                    <IconBox src={chevronDown} isHome={false} alt="playlist" />
-                  ) : (
-                    <IconBox
-                      src={chevronDownBlue}
-                      isHome={false}
-                      alt="playlist blue"
-                    />
-                  )}
-                  <NavText>{section.title}</NavText>
-                </Tab>
-              </NavHashLink>
-            )
-        )}
-      </VertNav>
-    </NavWrapper>
-  );
+    return (
+        <NavWrapper>
+            <VertNav>
+                <NavHashLink smooth to={"/"} onClick={window.scrollTo(0, 0)}>
+                    <Tab
+                        currentSection={window.location.pathname === "/"}
+                        isHome={true}
+                        key={0}
+                    >
+                        {window.location.pathname !== "/" ? (
+                            <IconBox src={homeIcon} isHome={true} alt="home" />
+                        ) : (
+                            <IconBox src={homeIconBlue} isHome={true} alt="home blue" />
+                        )}
+                        <NavText>Home</NavText>
+                    </Tab>
+                </NavHashLink>
+                <SectionWrapper>
+                    <IconBox src={sectionsIcon} isHome={false} alt="sections" />
+                    <NavText>Sections</NavText>
+                </SectionWrapper>
+                {sections.map(
+                    (section, index) =>
+                        section.title !== "Home" && (
+                            <NavHashLink smooth to={section.url}>
+                                <Tab
+                                    currentSection={window.location.pathname === section.url}
+                                    isHome={false}
+                                    key={index}
+                                >
+                                    {window.location.pathname !== section.url ? (
+                                        <IconBox src={chevronDown} isHome={false} alt="playlist" />
+                                    ) : (
+                                        <IconBox
+                                            src={chevronDownBlue}
+                                            isHome={false}
+                                            alt="playlist blue"
+                                        />
+                                    )}
+                                    <NavText>{section.title}</NavText>
+                                </Tab>
+                            </NavHashLink>
+                        )
+                )}
+            </VertNav>
+        </NavWrapper>
+    );
 };
 
 export default NavBar;

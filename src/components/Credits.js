@@ -3,10 +3,11 @@
 
 import React from "react";
 import styled from "styled-components";
-import { credits } from "../testData/testCredits.js";
+// import { credits } from "../testData/testCredits.js";
 import { size } from "../device";
 
-const jsonData = require("../testData/testCredits.json");
+// const jsonData = require("../testData/testCredits.json");
+import { credits } from '../data/credits';
 
 const font = "Khula";
 
