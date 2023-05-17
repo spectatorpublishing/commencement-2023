@@ -67,7 +67,7 @@ const Home = () => {
         <Right>
           <PlaylistTop
             name="COMMENCEMENT 2023"
-            description="Congrats!"
+            description="Congrats class of 2023!!! 🥳"
             creator="specteam"
             numberOfSongs={34}
           />

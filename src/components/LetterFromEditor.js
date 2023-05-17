@@ -59,35 +59,13 @@ const LetterEditor = () => {
     <LetterWrapper>
       <Title>Letter From The Editor</Title>
       <Text>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
+        <p> Dear readers, </p>
+        <p> Members of the class of 2023 arrived on campus in the fall of 2019 expecting a “normal” Columbia experience—late-night JJ’s runs, trudging across College Walk for an 8:40 a.m. major requirement, lounging on Low Steps during warm spring nights. Indeed, this is the experience they had during their first semester. And then a global pandemic reshaped life as we know it, forcing most of them away from a campus that had just begun to feel like theirs. </p>
+        <p> This year’s graduating class is special. The class of 2023 was the last class to experience the “old” Columbia. It is also the first to begin rebuilding a new one. </p>
+        <p> This Spectator special edition celebrates the culmination of that class’s four long years at the University and the conclusion of the 2022-2023 academic year, one of unparalleled change for Columbia. It was a year defined by complex endings: the end of the mask mandate and other pandemic restrictions; the final year of presidency for University President Lee Bollinger and Barnard President Sian Beilock, who are both leaving their posts after 21 and six years, respectively. It was also a year of new beginnings as we look toward a “new Columbia” rooted in both tradition and innovation. </p>
+        <p> We hope you’ll join us as we highlight the accomplishments of graduating artists, academics, activists, and athletes; Bollinger and Beilock’s final thoughts before they exit their presidencies; and words of wisdom from Spectator’s own graduating seniors. </p>
+        <p> Congratulations to the class of 2023! </p>
+        <p> All the very best, </p>
       </Text>
       <Signatures>
         Irie Sentner &bull; Editor in Chief
