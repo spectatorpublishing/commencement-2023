@@ -65,7 +65,7 @@ const Home = () => {
             name="COMMENCEMENT 2023"
             description="Congratulations Class of 2023! 🥳"
             creator="specteam"
-            numberOfSongs={34}
+            numberOfSongs={35}
           />
           <DividerLine />
           <Letter />
