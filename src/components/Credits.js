@@ -75,22 +75,21 @@ const Section = styled.div`
     @media only screen and (max-width: 768px) {
       padding-left: 0rem;
     }
-  }
-
-  @media only screen and (max-width: 1216px) {
-    font-size: 1.8rem;
-  }
-  @media only screen and (max-width: 1024px) {
-    font-size: 1.7rem;
-  }
-  @media only screen and (max-width: 768px) {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 1.4rem;
-    text-align: center;
-  }
+    }
+    @media only screen and (max-width: 1216px) {
+      font-size: 1.8rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 1.7rem;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.4rem;
+      text-align: center;
+    }
 `;
 
 const Name = styled.div`
@@ -109,7 +108,8 @@ const Name = styled.div`
 const CreditsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0rem 3rem 8rem 3rem;
+  justify-content:space-between;
+  padding: 0rem 3rem 12rem 3rem;
 
   @media only screen and (max-width: ${size.mobile}) {
     padding: 2rem 2rem 9rem 2rem;

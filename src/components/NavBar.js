@@ -76,13 +76,13 @@ const NavBar = () => {
   return (
     <NavWrapper>
       <VertNav>
-        <NavHashLink smooth to={"/"}>
+        <NavHashLink smooth to={"/"} onClick={window.scrollTo(0,0)}>
           <Tab
-            currentSection={window.location.pathname == "/"}
+            currentSection={window.location.pathname === "/"}
             isHome={true}
             key={0}
           >
-            {window.location.pathname != "/" ? (
+            {window.location.pathname !== "/" ? (
               <IconBox src={homeIcon} isHome={true} alt="home" />
             ) : (
               <IconBox src={homeIconBlue} isHome={true} alt="home blue" />
@@ -96,14 +96,14 @@ const NavBar = () => {
         </SectionWrapper>
         {sections.map(
           (section, index) =>
-            section.title != "Home" && (
+            section.title !== "Home" && (
               <NavHashLink smooth to={section.url}>
                 <Tab
-                  currentSection={window.location.pathname == section.url}
+                  currentSection={window.location.pathname === section.url}
                   isHome={false}
                   key={index}
                 >
-                  {window.location.pathname != section.url ? (
+                  {window.location.pathname !== section.url ? (
                     <IconBox src={chevronDown} isHome={false} alt="playlist" />
                   ) : (
                     <IconBox

@@ -41,8 +41,8 @@ const TopRow = styled.div`
 const CoverArt = styled.img`
   height: 150px;
   @media (max-width: ${size.mobile}) {
-    width: 230px;
-    height: 230px;
+    width: 10rem;
+    height: 10rem;
   }
 `;
 
@@ -59,11 +59,11 @@ const ArticleInfoBox = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: clamp(27px, 3vw, 40px);
+  font-size: 2.5rem;
   white-space: nowrap;
   font-weight: 700;
   color: #ffffff;
-  margin-top: auto;
+  margin-top: 1rem;
   margin-bottom: auto;
   padding-bottom: 1rem;
 
@@ -109,14 +109,14 @@ const IconRow = styled.div`
 
 const PlayButton = styled.img`
   display: flex;
-  width: 75px;
-  height: 75px;
+  width: 4rem;
+  height: 4rem;
   order: 1;
 
   @media (max-width: ${size.mobile}) {
     order: 4;
-    width: 62px;
-    height: 62px;
+    width: 3.5rem;
+    height: 3.5rem;
     margin-left: auto;
   }
 `;

@@ -49,7 +49,7 @@ const Right = styled.div`
 const DividerLine = styled.hr`
   background-color: white;
   width: 93%;
-  heigth: 1px;
+  height: 1px;
 
   @media (max-width: ${size.mobile}) {
     display: none;
@@ -57,7 +57,7 @@ const DividerLine = styled.hr`
 `;
 
 const ArticlesContainer = styled.div`
-
+  padding-bottom:7rem;
 `;
 
 const Section = ({ header, articles }) => {
@@ -70,14 +70,13 @@ const Section = ({ header, articles }) => {
         <Right>
           <PlaylistTop
             name={header}
-            description="Congrats class of 2023!!! 🥳!"
+            description="Congratulations Class of 2023! 🥳"
             creator="specteam"
             numberOfSongs={Object.keys(articles).length}
           />
           <DividerLine />
-          {/* <SongArticle /> */}
           <ArticlesContainer>
-            {articles.map((article, index) => (
+            {articles.map((article) => (
               <a style={{ textDecoration: 'none' }} href={article.article_link}><SongArticle img={article.image_url} title={article.article_title} author={article.article_authors} /></a>
             ))}
           </ArticlesContainer>

@@ -50,11 +50,7 @@ const Right = styled.div`
 const DividerLine = styled.hr`
   background-color: white;
   width: 93%;
-  heigth: 1px;
-
-  @media (max-width: ${size.mobile}) {
-    display: none;
-  }
+  height: 1px;
 `;
 
 const Home = () => {
@@ -67,7 +63,7 @@ const Home = () => {
         <Right>
           <PlaylistTop
             name="COMMENCEMENT 2023"
-            description="Congrats class of 2023!!! 🥳"
+            description="Congratulations Class of 2023! 🥳"
             creator="specteam"
             numberOfSongs={34}
           />

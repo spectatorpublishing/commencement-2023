@@ -8,13 +8,13 @@ const SongArticleWrapper = styled.div`
     flex-direction: row;
     font-family: 'Khula', sans-serif;
     align-items:center;
-    justify-content: space-around;
-    width:60%;
+    justify-content: space-between;
+    width:70%;
     margin:1rem;
-    @media screen and (max-width: ${size.tablet}) {
-        width:80%;
+    @media screen and (max-width: ${size.laptopS}) {
+        width:90%;
     }
-    @media screen and (max-width: ${size.mobile}) {
+    @media screen and (max-width: ${size.tablet}) {
         width:95%;
     }
 `;
@@ -22,7 +22,7 @@ const SongArticleWrapper = styled.div`
 const Image = styled.img`
     width:8rem;
     height:8rem;
-    object-fit:cover;
+    object-fit: cover;
     margin:0.75rem;
     @media screen and (max-width: ${size.tablet}) {
         width:7rem;
@@ -34,11 +34,15 @@ const Image = styled.img`
         height:6rem;
     }
 `
+const ImageText = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+`
 
 const Text = styled.div`
     display:flex;
     flex-direction:column;
-    justify-content:center;
     font-size:0.55rem;
     @media screen and (max-width: ${size.tablet}) {
         font-size:0.45rem;
@@ -68,11 +72,13 @@ const SongArticle = ({img, title, author}) => {
 
     return (
         <SongArticleWrapper>
-            <Image src={img} />
-            <Text>
-                <Title>{title}</Title>
-                <AuthorName>{author}</AuthorName>
-            </Text>
+            <ImageText>
+                <Image src={img} />
+                <Text>
+                    <Title>{title}</Title>
+                    <AuthorName>{author}</AuthorName>
+                </Text>
+            </ImageText>
             <Heart src = {heart}/>
         </SongArticleWrapper>
     );

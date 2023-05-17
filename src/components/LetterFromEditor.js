@@ -5,7 +5,7 @@ const LetterWrapper = styled.div`
   padding: 2rem 3rem 6rem 3rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 0rem 3rem 2rem 3rem;
+    padding: 0.5rem 1rem 2rem 2.5rem;
   }
 `;
 
