@@ -348,4 +348,26 @@ export const credits = {
       "title": "Preslotter"
     }
   ],
+  "Photo": [
+    {
+      "staff_name": "Judy Goldstein",
+      "title": "Photo Editor"
+    },
+    {
+      "staff_name": "Salem Maru",
+      "title": "Staff Photographer"
+    },
+    {
+      "staff_name": "Grace Li",
+      "title": "Staff Photographer"
+    },
+    {
+      "staff_name": "Shannon Binns",
+      "title": "Staff Photographer"
+    },
+    {
+      "staff_name": "Gabriella Gregor-Splaver",
+      "title": "Staff Photographer"
+    }
+  ]
 };
